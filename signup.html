@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal [...]">
+    <title>Cadastro | Bookly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/src/styles.css">
+</head>
+<body>
+    <div class="columns is-gapless m-0" style="height: 100vh; min-height:100svh;">
+        <main class="column is-flex is-align-items-center is-justify-content-center">
+            <div class="p-5" style="width:100%; max-width:560px;">
+                
+                <div>
+                    <figure class="image">
+                        <img src="./assets/src/icons/logo.svg" alt="">
+                    </figure>
+                </div>
+
+                <form>
+                    <div class="field mb-4">
+                        <label class="has-text-weight-medium">Nome</label>
+                        <div class="control">
+                            <input type="text" class="input is-secondary" placeholder="Informe seu nome">
+                        </div>
+                    </div>
+
+                    <div class="field mb-4">
+                        <label for="" class="has-text-weight-medium">Email</label>
+                        <div class="control">
+                            <input type="email" class="input is-secondary" placeholder="seuemail@exemplo.com">
+                        </div>
+                    </div>
+
+                    <div class="field mb-5">
+                        <label class="has-text-weight-medium">Senha</label>
+                        <input type="password" class="input is-secondary" placeholder="Digite sua senha">
+                    </div>
+
+                    <div class="field mb-5">
+                        <div class="control">
+                            <button type="button" class="button is-fullwidth is-large is-primary has-text-primary-light">
+                                <span class="is-size-6">Criar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <a class="" href="./login.html">Já tem uma conta?</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <section class="column is-half-desktop is-fullheight is-hidden-mobile" style="background-color: #100B08;">
+            <div class="is-flex is-justify-content-end is-align-items-end p-6" style="height:100%;">
+                <a href="./login.html" class="title is-3 has-text-right">Já tenho uma conta</a>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

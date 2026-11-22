@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal [...]">
+    <title>Login | Bookly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/src/styles.css">
+</head>
+<body>
+    <div class="columns is-gapless m-0" style="min-height: 100vh; min-height:100svh;">
+
+        <section class="column is-half-desktop hero is-fullheight is-hidden-mobile">
+            
+            <div class="hero-body is-align-items-flex-end" 
+                style="background-color: #100B08;
+                    background-image: 
+                        linear-gradient(
+                            to bottom,
+                            rgba(16, 11, 8, 0.15) 0%,
+                            rgba(16, 11, 8, 0.1) 45%,
+                            rgba(16, 11, 8, 0.55) 75%,
+                            rgba(16, 11, 8, 0.95) 100%
+                        ),
+                        url(./assets/src/img/background.png);
+                    background-size: cover;
+                    background-position: center;">
+                <div>
+                    <h2 class="title is-1 is-family-secondary has-text-grey-light">
+                        Boas leituras.<br>
+                        Boas conversas.
+                    </h2>
+                    <p class="has-text-grey-light">Encontre sua próxima leitura e compartilhe suas ideias com outros leitores.</p>
+                </div>
+            </div>
+        </section>
+
+        <main class="column is-flex is-align-items-center is-justify-content-center">
+            <div class="px-6 pb-2" style="width: 100%; max-width: 560px;">
+                <!-- Apresentação -->
+                <div class="mb-6">
+                    <p class="has-text-grey has-text-centered mb-6 pb-2">Seus próximos capítulos estarão esperando por você.</p>
+                    <p class="subtitle is-7 is-family-primary is-uppercase has-text-weight-semibold has-text-link mb-2">Sua conta</p>
+                    <h1 class="title is-1 is-family-secondary has-text-weight-medium mb-3">Bem-vindo</h1>
+                    <p class="has-text-grey">Entre com seus dados para continuar.</p>
+                </div>
+                <!-- formulário de login -->
+                <form class="form">
+                    <div class="field mb-4">
+                        <label class="label has-text-weight-medium">E-mail</label>
+                        <div class="control">
+                            <input type="email" class="input is-secondary" placeholder="seuemail@exemplo.com">
+                        </div>
+                    </div>
+
+                    <div class="field mb-5">
+                        <label class="label has-text-weight-medium">Senha</label>
+                        <div class="control">
+                            <input type="password" class="input is-secondary" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-multiline is-justify-content-space-between mb-4">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" class="is-primary">
+                                Manter-me conectado
+                            </label>    
+                        </div>
+                        <div class="control">
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+
+                    <div class="field mb-5">
+                        <div class="control">
+                            <button type="button" class="button is-fullwidth is-large is-primary has-text-primary-light" onclick="window.location.href='./index.html';">
+                                <span class="is-size-6">Entrar</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="has-text-centered"> Ainda não tem uma conta?
+                            <a href="./signup.html">Cadastre-se</a>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+html {
+    overflow-y: auto;
+}
+
+:root {
+  --bulma-primary-h: 161deg;
+  --bulma-primary-s: 48%;
+  --bulma-primary-l: 17%;
+  --bulma-link-h: 18deg;
+  --bulma-link-s: 45%;
+  --bulma-link-l: 38%;
+  --bulma-family-primary: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --bulma-family-secondary: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --bulma-body-background-color: #FFF8F2;
+  --bulma-body-color: #536158;
+  --bulma-strong-color: #173A30;
+  --app-surface: #F3ECE2;
+}
+/* Resolve o problema da variável de família de fontes secundárias não reconhecida */
+.is-family-secondary {
+  font-family: var(--bulma-family-secondary) !important;
+}
+
+.card {
+  --bulma-card-background-color: #FFFCF7;
+}
+
+.book-cover {
+  border-radius: 8px;
+}
+
+.is-secondary {
+  background-color: #EFE7DE;
+}
