@@ -10,21 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/src/styles.css">
+    <script src="./assets/index.js" defer></script>
 </head>
 <body>
-    <div class="">
+    <div>
         <header>
-            <nav class="navbar is-flex p-2" role="navigation" aria-label="main navigation">
-                <div class="container">
+            <nav class="navbar p-2" role="navigation" aria-label="main navigation">
+                <div class="container px-6">
                     <div class="navbar-brand">
                         <figure class="navbar-item image">
                             <a class="" href="./">
                                 <img src="./assets/src/icons/logo.svg" alt="logo Bookly">
                             </a>
                         </figure>
+                        <a role="button" id="navbar-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
                     </div>
-                    <div class="navbar-menu">
-                        <div class="navbar-start">
+
+                    <div id="navbar-menu" class="navbar-menu">
+                        <div class="navbar-start is-flex-grow-1 is-justify-content-center">
                             <a class="navbar-item">
                                 Feed & Amigos
                             </a>
@@ -33,14 +41,20 @@
                             </a>    
                         </div>
                 
-                        <div class="navbar-end">
-                            <img  src="./assets/src/icons/has-notification.svg" alt="ícone de notificação">
-                            <figure class="image is-48x48">
-                                <img class="is-rounded" src="https://bulma.io/assets/images/placeholders/32x32.png" alt="imagem de perfil">
-                            </figure>
+                        <div class="navbar-end is-hidden-touch">
+                            <div class="navbar-item">
+                                <img src="./assets/src/icons/has-notification.svg" alt="Notificações">
+                            </div>
+
+                            <div class="navbar-item">
+                                <figure class="image is-32x32">
+                                    <img class="is-rounded" src="https://bulma.io/assets/images/placeholders/48x48.png" alt="imagem de perfil">
+                                </figure>
+                            </div>
+                            
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <a class="navbar-link">
-                                    [Username]
+                                    Clarice
                                 </a>
                                 <div class="navbar-dropdown">
                                     <a class="navbar-item">Configurações</a>
@@ -48,12 +62,17 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="navbar-end is-hidden-desktop">
+                            <a href="" class="navbar-item">Configurações</a>
+                            <a class="navbar-item" href="./login.html">Sair</a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main class="px-6">
+        <main>
             <div class="container">
                 <section class="hero">
                     <div class="hero-body">
@@ -70,20 +89,24 @@
                     <div class="panel">
                         <!-- primeira linha -->
                         <div class="panel-block">
-                            <div class="level is-flex-grow-1">
+                            <div class="level is-flex-grow-1 is-flex-wrap-wrap">
                                 <div class="level-left">
                                     <div class="is-flex is-flex-wrap-wrap">
-                                        <a class="box mb-0 mx-1 py-0 p-2">Todos<span class="tag is-rounded is-secondary ml-1">78</span></a>
-                                        <a class="box mb-0 mx-1 py-0 p-2">Lendo agora<span class="tag is-rounded is-danger is-light  ml-1">3</span></a>
-                                        <a class="box mb-0 mx-1 py-0 p-2">Quero ler<span class="tag is-rounded is-secondary ml-1">18</span></a>
-                                        <a class="box mb-0 mx-1 py-0 p-2 has-text-weight-semibold">Lidos<span class="tag is-rounded is-secondary ml-1">52</span></a>
-                                        <a class="box mb-0 mx-1 py-0 p-2 has-text-weight-semibold">Coleções<span class="mx-1">(3)</span></a>        
+                                        <a class="box m-1 py-0 p-2">Todos<span class="tag is-rounded is-secondary ml-1">78</span></a>
+
+                                        <a class="box m-1 py-0 p-2">Lendo agora<span class="tag is-rounded is-danger is-light  ml-1">3</span></a>
+                                        
+                                        <a class="box m-1 py-0 p-2">Quero ler<span class="tag is-rounded is-secondary ml-1">18</span></a>
+                                        
+                                        <a class="box m-1 py-0 p-2 has-text-weight-semibold">Lidos<span class="tag is-rounded is-secondary ml-1">52</span></a>
+                                        
+                                        <a class="box m-1 py-0 p-2 has-text-weight-semibold">Coleções<span class="mx-1">(3)</span></a>        
                                     </div>
                                 </div>
                                 
                                 <div class="level-right mr-1">
                                     <div class="tabs box is-secondary px-4 py-2">
-                                        <ul>
+                                        <ul class="is-flex-wrap-wrap">
                                             <li class="is-active box level-item my-0 py-0 px-3">Capas 3D</li>
                                             <li class="level-item mx-3 py-0 ">Lista</li>
                                             <li class="level-item mx-2 py-0 ">Prateleiras</li>
@@ -95,18 +118,39 @@
                         <!-- segunda linha -->
                         <div class="panel-block">
                             <div class="level is-flex-grow-1">
-                                <div class="level-left">
-                                    <div class="control has-icons-left">
-                                        <input type="text" class="input level-item" placeholder="Filtrar por título, autor, gênero ou tag...">
+
+                                <div class="level-left is-flex-grow-1">
+                                    <div class="control has-icons-left mr-6" style="width: 100%;">
+                                        <input type="text" class="input" placeholder="Filtrar por título, autor, gênero ou tag...">
+
                                         <span class="icon is-left">
                                             <img src="./assets/src/icons/filter.svg" alt="ícone de pesquisa">
                                         </span>
+
+                                        
                                     </div> 
                                 </div>
 
                                 <div class="level-right">
-                                    <span class="card-content has-text-weight-medium">Ordenar:</span>
-                                    <span class="box p-3 has-text-weight-bold has-text-left">Data de adição recente</span>
+                                    <span class="icon">
+                                        <img src=".//assets/src/icons/order-by.svg" alt="ícone de filtragem">
+                                    </span>
+
+                                    <label class="has-text-weight-medium">Ordenar:</label>
+
+                                    <div class="select">
+                                        <select class="has-text-weight-semi bold has-text-left p-2 pr-6">
+                                            <option>Data de adição recente</option>
+                                            <option>Título</option>
+                                            <option>Autor</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="button px-2">
+                                        <span class="icon">
+                                            <img src=".//assets/src/icons/invert-order.svg" alt="ícone de filtragem">
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
