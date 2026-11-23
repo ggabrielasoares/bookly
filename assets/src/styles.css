@@ -30,5 +30,30 @@ html {
 }
 
 .is-secondary {
-  background-color: #EFE7DE;
+  background-color: #F3ECE2;
+}
+
+.book-title {
+  /* line-height: 1.2; */
+  min-height: 1.7em;
+  height: 100%;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content .button {
+    margin-top: auto;
 }
