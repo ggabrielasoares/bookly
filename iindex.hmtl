@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página principal [...]">
+
+    <title>Página Principal | Bookly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/src/styles.css">
+</head>
+
+<body>
+
+    <div class="">
+
+        <header>
+
+            <nav class="navbar is-flex p-2" role="navigation" aria-label="main navigation">
+
+                <div class="container">
+
+                    <div class="navbar-brand">
+
+                        <figure class="navbar-item image">
+
+                            <a class="" href="./">
+                                <img src="./assets/src/icons/logo.svg" alt="">
+                            </a>
+
+                        </figure>
+
+                    </div>
+
+                    <div class="navbar-menu">
+
+                        <div class="navbar-start">
+
+                            <a class="navbar-item">
+                                Feed & Amigos
+                            </a>
+
+                            <a class="navbar-item">
+                                Clubes
+                            </a>
+
+                        </div>
+
+                        <div class="navbar-end">
+
+                            <img src="./assets/src/icons/has-notification.svg" alt="">
+
+                            <figure class="image is-48x48">
+                                <img class="is-rounded"
+                                    src="https://bulma.io/assets/images/placeholders/32x32.png"
+                                    alt="">
+                            </figure>
+
+                            <div class="navbar-item has-dropdown is-hoverable">
+
+                                <a class="navbar-link">
+                                    [Username]
+                                </a>
+
+                                <div class="navbar-dropdown">
+
+                                    <a class="navbar-item">
+                                        Configurações
+                                    </a>
+
+                                    <a class="navbar-item" href="./login.html">
+                                        Sair
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main class="px-6">
+
+            <div class="container">
+
+                <section class="hero">
+
+                    <div class="hero-body">
+
+                        <h1 class="title is-1 is-family-secondary">
+                            Biblioteca & descobertas
+                        </h1>
+
+                        <p class="subtitle is-6 is-family-primary">
+                            Encontre sua próxima leitura. Explore o acervo, conheça cada obra e compartilhe suas impressões com a comunidade.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="section">
+
+                    <div class="panel">
+
+                        <!-- primeira linha -->
+                        <div class="panel-block">
+
+                            <div class="level is-flex-grow-1">
+
+                                <div class="level-left">
+
+                                    <div class="is-flex is-flex-wrap-wrap">
+
+                                        <a class="box mb-0 mx-1 py-0 p-2">
+                                            Todos<span class="tag is-rounded is-secondary ml-1">78</span>
+                                        </a>
+
+                                        <a class="box mb-0 mx-1 py-0 p-2">
+                                            Lendo agora<span class="tag is-rounded is-danger is-light ml-1">3</span>
+                                        </a>
+
+                                        <a class="box mb-0 mx-1 py-0 p-2">
+                                            Quero ler<span class="tag is-rounded is-secondary ml-1">18</span>
+                                        </a>
+
+                                        <a class="box mb-0 mx-1 py-0 p-2 has-text-weight-semibold">
+                                            Lidos<span class="tag is-rounded is-secondary ml-1">52</span>
+                                        </a>
+
+                                        <a class="box mb-0 mx-1 py-0 p-2 has-text-weight-semibold">
+                                            Coleções<span class="mx-1">(3)</span>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="level-right mr-1">
+
+                                    <div class="tabs box is-secondary px-4 py-2">
+
+                                        <ul>
+                                            <li class="is-active box level-item my-0 py-0 px-3">
+                                                Capas 3D
+                                            </li>
+
+                                            <li class="level-item mx-3 py-0">
+                                                Lista
+                                            </li>
+
+                                            <li class="level-item mx-2 py-0">
+                                                Prateleiras
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- segunda linha -->
+                        <div class="panel-block">
+
+                            <div class="level is-flex-grow-1">
+
+                                <div class="level-left">
+
+                                    <div class="control has-icons-left">
+
+                                        <input type="text" class="input level-item"
+                                            placeholder="Filtrar por título, autor, gênero ou tag...">
+
+                                        <span class="icon is-left">
+                                            <img src="./assets/src/icons/filter.svg" alt="">
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="level-right">
+
+                                    <span class="card-content has-text-weight-medium">
+                                        Ordenar:
+                                    </span>
+
+                                    <span class="box p-3 has-text-weight-bold has-text-left">
+                                        Data de adição recente
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="section">
+
+                    <div class="fixed-grid has-2-cols-mobile has-3-cols-tablet has-4-cols-desktop">
+
+                        <div class="grid">
+
+                            <!-- LIVRO 1 -->
+                            <div class="cell">
+
+                                <article class="card">
+
+                                    <div class="card-image px-5 pt-5">
+
+                                        <figure class="image is-3by4">
+                                            <img class="book-cover"
+                                                src="./assets/src/img/books/carmilla.png"
+                                                alt="">
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="card-content">
+
+                                        <p class="title is-3 is-family-secondary mb-4">
+                                            Título da obra
+                                        </p>
+
+                                        <p class="is-family-primary mb-1 has-text-grey">
+                                            Autor do livro
+                                        </p>
+
+                                        <p class="is-family-primary mb-3 has-text-grey">
+                                            Gênero &middot; 2000
+                                        </p>
+
+                                        <p class="is-size-7 mb-5">
+                                            <strong class="has-text-link">★ 4.5 / 5</strong>
+                                        </p>
+
+                                        <a class="button is-fullwidth is-primary has-text-primary-light"
+                                            href="./avaliação.html">
+                                            Ver livro e avaliar <strong>-></strong>
+                                        </a>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                            <!-- LIVRO 2 -->
+                            <div class="cell">
+
+                                <article class="card">
+
+                                    <div class="card-image px-5 pt-5">
+
+                                        <figure class="image is-3by4">
+                                            <img class="book-cover"
+                                                src="./assets/src/img/books/olhos_dagua.png"
+                                                alt="">
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="card-content">
+
+                                        <p class="title is-3 is-family-secondary mb-4">
+                                            Título da obra
+                                        </p>
+
+                                        <p class="is-family-primary mb-1 has-text-grey">
+                                            Autor do livro
+                                        </p>
+
+                                        <p class="is-family-primary mb-3 has-text-grey">
+                                            Gênero &middot; 2000
+                                        </p>
+
+                                        <p class="is-size-7 mb-5">
+                                            <strong class="has-text-link">★ 4.5 / 5</strong>
+                                        </p>
+
+                                        <a class="button is-fullwidth is-primary has-text-primary-light"
+                                            href="./avaliação.html">
+                                            Ver livro e avaliar <strong>-></strong>
+                                        </a>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                            <!-- LIVRO 3 -->
+                            <div class="cell">
+
+                                <article class="card">
+
+                                    <div class="card-image px-5 pt-5">
+
+                                        <figure class="image is-3by4">
+                                            <img class="book-cover"
+                                                src="./assets/src/img/books/1984.png"
+                                                alt="">
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="card-content">
+
+                                        <p class="title is-3 is-family-secondary mb-4">
+                                            Título da obra
+                                        </p>
+
+                                        <p class="is-family-primary mb-1 has-text-grey">
+                                            Autor do livro
+                                        </p>
+
+                                        <p class="is-family-primary mb-3 has-text-grey">
+                                            Gênero &middot; 2000
+                                        </p>
+
+                                        <p class="is-size-7 mb-5">
+                                            <strong class="has-text-link">★ 4.5 / 5</strong>
+                                        </p>
+
+                                        <a class="button is-fullwidth is-primary has-text-primary-light"
+                                            href="./avaliação.html">
+                                            Ver livro e avaliar <strong>-></strong>
+                                        </a>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                            <!-- LIVRO 4 -->
+                            <div class="cell">
+
+                                <article class="card">
+
+                                    <div class="card-image px-5 pt-5">
+
+                                        <figure class="image is-3by4">
+                                            <img class="book-cover"
+                                                src="./assets/src/img/books/como_democracias_morrem.png"
+                                                alt="">
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="card-content">
+
+                                        <p class="title is-3 is-family-secondary mb-4">
+                                            Título da obra
+                                        </p>
+
+                                        <p class="is-family-primary mb-1 has-text-grey">
+                                            Autor do livro
+                                        </p>
+
+                                        <p class="is-family-primary mb-3 has-text-grey">
+                                            Gênero &middot; 2000
+                                        </p>
+
+                                        <p class="is-size-7 mb-5">
+                                            <strong class="has-text-link">★ 4.5 / 5</strong>
+                                        </p>
+
+                                        <a class="button is-fullwidth is-primary has-text-primary-light"
+                                            href="./avaliação.html">
+                                            Ver livro e avaliar <strong>-></strong>
+                                        </a>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                            <!-- LIVRO 5 -->
+                            <div class="cell">
+
+                                <article class="card">
+
+                                    <div class="card-image px-5 pt-5">
+
+                                        <figure class="image is-3by4">
+                                            <img class="book-cover"
+                                                src="./assets/src/img/books/dracula.png"
+                                                alt="">
+                                        </figure>
+
+                                    </div>
+
+                                    <div class="card-content">
+
+                                        <p class="title is-3 is-family-secondary mb-4">
+                                            Título da obra
+                                        </p>
+
+                                        <p class="is-family-primary mb-1 has-text-grey">
+                                            Autor do livro
+                                        </p>
+
+                                        <p class="is-family-primary mb-3 has-text-grey">
+                                            Gênero &middot; 2000
+                                        </p>
+
+                                        <p class="is-size-7 mb-5">
+                                            <strong class="has-text-link">★ 4.5 / 5</strong>
+                                        </p>
+
+                                        <a class="button is-fullwidth is-primary has-text-primary-light"
+                                            href="./avaliação.html">
+                                            Ver livro e avaliar <strong>-></strong>
+                                        </a>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <nav class="pagination level box is-secondary"
+                            role="navigation"
+                            aria-label="pagination">
+
+                            <div class="level-left is-family-primary has-text-primary-bold">
+
+                                <span class="level-item">
+                                    Página 1 de 2 &middot; Catálogo geral da biblioteca
+                                </span>
+
+                            </div>
+
+                            <div class="level-right">
+
+                                <div class="level-item">
+                                    <a href="" class="pagination-previous">
+                                        Anterior
+                                    </a>
+                                </div>
+
+                                <div class="level-item">
+
+                                    <ul class="pagination-list">
+
+                                        <li>
+                                            <a href="" class="pagination-link is-current"
+                                                aria-label="Ir para a página 1">
+                                                1
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="" class="pagination-link"
+                                                aria-label="Ir para a página 2">
+                                                2
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="level-item">
+                                    <a href="" class="pagination-next">
+                                        Próxima
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </nav>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
